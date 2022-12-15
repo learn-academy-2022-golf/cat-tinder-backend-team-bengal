@@ -7,7 +7,7 @@ Complete - As a developer, I can create a RSpec testing suite in my Rails applic
 As a developer, I can add a resource for Cat that has a name, an age, what the cat enjoys doing, and an image.
 
 rails generate resource Cat name:string age:integer enjoys:text image:text
-$ rails db:migrate
+###  $ rails db:migrate
 
 Add seed file db-->seeds.rb
 add code to file from syllabus
@@ -49,3 +49,65 @@ Complete - As a developer, I can enable my controller to accept requests from ou
 Complete - As a developer, I can add the CORS gem to my Rails application. Get file from the syllabus
 
 Complete - As a developer, I can add the cors.rb file to my application. app/initializers/cors.rb --We need to do a file create for cors.rb
+
+## As a developer, I can add an index request spec to my application. ✅
+under app/controllers/cats_controller.rb
+
+def index
+  end
+
+  def create
+  end
+
+  def update
+  end
+
+  def destroy
+  end
+
+end
+
+in /spec/requests/cats_request_spec.rb
+
+First hiccup. The above file does not exist in my folder
+
+Solution: created the file, c&p the supplied content from syllabus
+
+tried rspec spec
+
+informed need to run bundle
+
+ran bundle install
+
+rspec spec  no database error
+rails db:create
+rails db:migrate
+rails db:seed
+
+in config/routes.rb
+Rails.application.routes.draw do
+  resources :cats
+end
+
+
+## As a developer, I can add an index endpoint to my application. ✅
+
+## As a developer, I can add a create request spec to my application. ✅
+
+## As a developer, I can add a create endpoint to my application. ✅
+
+
+# Stretch Goals
+## As a developer, I can add an update request spec to my application.
+
+
+
+
+
+
+
+## As a developer, I can add an update endpoint to my application.
+
+## As a developer, I can add a destroy request spec to my application.
+
+## As a developer, I can add a destroy endpoint to my application.
