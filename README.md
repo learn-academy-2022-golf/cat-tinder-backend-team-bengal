@@ -111,3 +111,22 @@ end
 ## As a developer, I can add a destroy request spec to my application.
 
 ## As a developer, I can add a destroy endpoint to my application.
+
+As a developer, I can add the appropriate model specs that will ensure an incomplete cat throws an error.
+
+
+As a developer, I can add the appropriate model validations to ensure the user submits a name, an age, what the cat enjoys, and an image.
+
+
+As a developer, I can add the appropriate model specs that will ensure a cat enjoys entry is at least 10 characters long.
+As a developer, I can add a validation to assure that will ensure a cat enjoys entry is at least 10 characters long.
+As a developer, I can add the appropriate request validations to ensure the API is sending useful information to the frontend developer if a new cat is not valid.
+
+
+As a developer, I can add the appropriate request spec that will look for a 422 error if the create validations are not met.
+
+
+STRETCH: As a developer, I can add the appropriate request validations to ensure the API is sending useful information to the frontend developer if an updated cat is not valid.
+
+
+STRETCH: As a developer, I can add the appropriate request spec that will look for a 422 error if the update validations are not met.
