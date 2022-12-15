@@ -98,8 +98,13 @@ end
 
 
 # Stretch Goals
-
 ## As a developer, I can add an update request spec to my application.
+
+
+
+
+
+
 
 ## As a developer, I can add an update endpoint to my application.
 
